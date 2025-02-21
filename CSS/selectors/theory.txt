@@ -1,0 +1,172 @@
+What are CSS Selectors?
+CSS selectors are patterns used to select and style specific HTML elements. They define which elements the CSS rules will apply to.
+
+Types of CSS Selectors:
+1. Basic Selectors
+Universal Selector (*)
+
+Selects all elements on the page.
+
+* {
+    margin: 0;
+    padding: 0;
+}
+----------------------------------------------
+
+Element (Type) Selector
+
+Targets all instances of a specific HTML tag.
+
+p {
+    color: blue;
+}
+
+----------------------------------------------
+Class Selector (.)
+
+Targets elements with a specific class.
+
+.highlight {
+    background-color: yellow;
+}
+
+----------------------------------------------
+ID Selector (#)
+
+Targets an element with a specific ID (unique per page).
+
+#main-heading {
+    font-size: 24px;
+}
+----------------------------------------------
+Group Selector (,)
+
+Targets multiple elements at once.
+
+h1, h2, p {
+    font-family: Arial, sans-serif;
+}
+----------------------------------------------
+2. Combinator Selectors
+Used to select elements based on relationships between them.
+
+Descendant Selector (space)
+
+Selects elements inside another element.
+
+div p {
+    color: red;
+}
+Styles <p> inside <div>, but not outside.
+
+----------------------------------------------
+
+Child Selector (>)
+
+Selects direct child elements only.
+
+div > p {
+    font-weight: bold;
+}
+
+----------------------------------------------
+Adjacent Sibling Selector (+)
+
+Selects the first immediate sibling element.
+
+h1 + p {
+    font-size: 18px;
+}
+Styles only the first <p> after an <h1>.
+
+----------------------------------------------
+
+General Sibling Selector (~)
+
+Selects all sibling elements after a specific element.
+
+h1 ~ p {
+    color: gray;
+}
+
+----------------------------------------------
+
+3. Attribute Selectors
+Selects elements based on attributes.
+
+Exists ([attribute])
+
+Selects elements with a given attribute.
+
+input[required] {
+    border: 2px solid red;
+}
+Exact Match ([attribute="value"])
+
+Selects elements with a specific attribute value.
+
+input[type="text"] {
+    background-color: lightgray;
+}
+Contains ([attribute*="value"])
+
+Matches if the attribute contains a certain value.
+
+a[href*="example"] {
+    color: green;
+}
+
+----------------------------------------------
+
+4. Pseudo-Classes
+Used to define a special state of an element.
+
+:hover (When the mouse hovers)
+
+
+a:hover {
+    color: red;
+}
+
+----------------------------------------------
+:focus (When an input is focused)
+
+
+input:focus {
+    border-color: blue;
+}
+
+----------------------------------------------
+:nth-child(n) (Selects the nth child)
+
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+----------------------------------------------
+5. Pseudo-Elements
+Used to style parts of an element.
+
+::before (Adds content before an element)
+
+
+h1::before {
+    content: "🔥 ";
+}
+
+----------------------------------------------
+
+::after (Adds content after an element)
+
+p::after {
+    content: " (Read more)";
+}
+
+----------------------------------------------
+::first-letter (Styles the first letter)
+
+
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
