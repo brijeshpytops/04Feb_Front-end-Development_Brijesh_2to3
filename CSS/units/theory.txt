@@ -1,0 +1,101 @@
+%, px, em, rem, vh, vw
+
+In CSS, units define measurements for elements, such as width, height, padding, margin, font size, and more
+
+1. Percentage (%)
+Relative to the parent element's size.
+
+div {
+  width: 50%; /* 50% of the parent container's width */
+}
+
+
+2. Pixels (px)
+Absolute unit (fixed size).
+Commonly used for font sizes, widths, heights, margins, and padding.
+
+p {
+  font-size: 16px; /* Sets font size to 16 pixels */
+}
+
+3. em (Relative to Parent Font Size)
+1em = size of the parent element’s font-size.
+Useful for scalable typography.
+
+body {
+  font-size: 16px;
+}
+p {
+  font-size: 2em; /* 2 * 16px = 32px */
+}
+
+4. rem (Relative to Root Font Size)
+1rem = size of the root element’s (<html>) font-size.
+Unlike em, rem does not depend on the parent element.
+
+html {
+  font-size: 16px;
+}
+p {
+  font-size: 2rem; /* 2 * 16px = 32px */
+}
+
+5. Viewport Height (vh) & Viewport Width (vw)
+vh is relative to the height of the viewport (browser window).
+vw is relative to the width of the viewport.
+1vh = 1% of the viewport height.
+1vw = 1% of the viewport width.
+Useful for full-screen layouts.
+
+div {
+  width: 100vw; /* Full viewport width */
+  height: 50vh; /* Half of viewport height */
+}
+
+
+Unit	Best Used For
+--------------------------------------------
+%	    Flexible layouts, responsive designs
+px	    Fixed-size elements (not scalable)
+em	    Typography (relative to parent)
+rem	    Typography (relative to root)
+vh	    Full-screen layouts (height)
+vw	    Full-screen layouts (width)
+
+Absolute Units (Fixed sizes)
+These do not depend on anything else and always remain the same.
+
+px (pixels) – Common for screens.
+cm (centimeters) – Mostly used for print styles.
+mm (millimeters) – Also for print.
+in (inches) – 1in = 2.54cm = 96px.
+pt (points) – 1pt = 1/72 of an inch (used in typography).
+pc (picas) – 1pc = 12pt (used in print).
+
+Relative Units (Change based on context)
+These depend on the font size, viewport, or other elements.
+
+% (Percentage) – Relative to the parent element.
+em – Relative to the font-size of the parent element.
+rem – Relative to the root (<html>) font size.
+vw (Viewport Width) – 1vw = 1% of the viewport width.
+vh (Viewport Height) – 1vh = 1% of the viewport height.
+vmin – 1% of the smaller dimension (width or height).
+vmax – 1% of the larger dimension (width or height).
+ex – Relative to the height of the letter "x" in the current font.
+ch – Relative to the width of the "0" (zero) character in the font.
+lh – Relative to the line-height of the element.
+rlh – Relative to the root line-height.
+
+Special Units
+fr (Fractional Unit in CSS Grid)
+
+Used in CSS Grid to divide space.
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* First column takes 1 part, second takes 2 */
+}
+
+auto – Adjusts size based on content or available space.
+
+calc() – Allows calculations in CSS.
