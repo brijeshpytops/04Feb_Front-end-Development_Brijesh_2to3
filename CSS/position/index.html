@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            border: 1px solid;
+            margin: auto;
+            width: 70%;
+            height: 50vh;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid violet;
+        }
+        .box-1{
+            position: absolute;
+            background-color: violet;
+            right: -50px;
+            top: -50px;
+        }
+        .box-2{
+            position: fixed;
+            background-color: blue;
+            border-radius:50% ;
+            bottom:50px;
+            right:50px;
+        }
+        .box-3{
+            display: block;
+            position: absolute;
+            background-color: green;
+            bottom:-50px;
+            left:50%;
+            transform: translateX(-50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box box-1">box-1</div>
+        <div class="box box-2">box-2</div>
+        <div class="box box-3">box-3</div>
+    </div>
+</body>
+</html>
