@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style-type:none
+        }
+        nav {
+            height: 100px;
+            width: 100%;
+            border: 1px solid #e1f2fa;
+            background-color: #e1f2fa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+            box-shadow: 2px 2px 5px rgb(141, 182, 209);
+        }
+        .tpheader_right {
+            flex-grow: 2;
+            padding-left:20px ;
+        }
+        .tpheader_right > ul {
+            display: flex;
+            justify-content: center;
+            align-items: end;
+
+        }
+        .tpheader_right > ul > li {
+            position: relative;
+            margin-left: 25px;
+            
+        }
+        .dropdown_menus {
+            z-index: 1200;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            /* border: 1px solid black; */
+            box-shadow: 2px 2px 5px rgb(141, 182, 209);
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .tpheader_right > ul > li:hover .dropdown_menus > ul >li{
+            padding: 10px;
+        }
+
+        .tpheader_right > ul > li:hover .dropdown_menus{
+            display: block;
+            background-color: white;
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="tpheader_left">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="tpheader_right">
+                <ul>
+                    <li>
+                        Online Users
+                        <div class="dropdown_menus">
+                            <ul>
+                                <li>Reschedule My Journey</li>
+                                <li>Refund Complaint</li>
+                                <li>Refund / Transaction Enquiry</li>
+                                <li>View History</li>
+                                <li>Print / SMS Ticket</li>
+                                <li>Cancel Ticket</li>
+                                <li>Waiting List Ticket Status</li>
+                                <li>Wallet Passbook</li>
+                                <li>Wallet Account</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Track Bus</li>
+                    <li>Agent Login
+                        <div class="dropdown_menus">
+                            <ul>
+                                <li>Agent Login</li>
+                                <li>New Agent Register</li>
+                                <li>Agent Allotment</li>
+                                <li>E-Top Status</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Sharvan Tirth Darshan</li>
+                </ul>
+            </div>
+        </nav>
+        <marquee style="background-color: #ebebeb; padding: 5px;" behavior="" direction=""> <strong>Note:</strong> 1. User should never press either forward or Back buttons during the transaction. 📌  ટિકિટ બુક કરતા પહેલા એક્વાર BROWSER HISTORY ક્લિયર કરવી અને મોબાઇલ એપ્લીકેશન અપડેટ કરવી. 2.	User should never refresh the page during the transaction. 📌  ટિકિટ બુક કરતી વખતે FORWORD  કે BACK બટનનો ઉપયોગ કરવો નહિ. 3. Please ensure the reliable Internet Connectivity during entire transaction. 📌  ટ્ર્રાંઝેક્શન કરતી વખતે પેજને REFRESH કરવુ નહિ. 4. Ensure whole transaction should be completed within 15 minutes otherwise Seat might have got released. 📌  ટિકિટ બુકિંગ કરતી વખતે ટિકિટના ટ્રાંઝેક્શનની સંપુર્ણ પ્રક્રીયા ૧૫ મિનિટની અંદર પુર્ણ કરી લેવી નહિતર સીટ બુક થશે નહિ. 5.	For any FAILURE Transactions during E &amp; M Booking (Amount debited from the bank account but Ticket no generated), Refund will be processed within 7 to 10 working days. 📌  જો ઓનલાઇન અને મોબાઇલ એપ્લીકેશનથી ટિકિટ બુક કરતી વખતે ટ્રાંઝેક્શન ફેઇલ થાય (પૈસા કપાય જાય અને ટિકિટ બુક ના થાય) તો રીફંડ મુસાફરની બેંક દ્વારા મુસાફરના બેંક ખાતામા જમા કરવામા આવશે. &nbsp;&nbsp; " હવેથી ગુજરાત એસ.ટીની વોલ્વો સ્લીપર અને એ.સી સ્લીપરમાં દિવ્યાંગ કાર્ડ ધારક મુસાફરો પોતાના ઓળખકાર્ડના આધારે બુકિંગ કરી મુસાફરી કરી શકશે."
+        </marquee>
+    </header>
+</body>
+</html>
