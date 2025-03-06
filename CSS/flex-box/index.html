@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 70%;
+            height: 50vh;
+            margin: auto;
+            border: 1px solid rgb(0, 0, 0);
+
+            display: flex;
+            /* display: inline-flex; */
+
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap:nowrap; */
+            /* flex-wrap:wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex-flow: row nowrap;
+            flex-flow: row-reverse nowrap;
+            flex-flow: column nowrap;
+            flex-flow: column-reverse nowrap;
+            flex-flow: row wrap;
+            flex-flow: row-reverse wrap;
+            flex-flow: column wrap;
+            flex-flow: column-reverse wrap; */
+
+            /* justify-content: start; */
+            /* justify-content: flex-start; */
+            /* justify-content: end; */
+            justify-content: center;
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* align-items:stretch;
+            align-items:start;
+            align-items:flex-start;
+            align-items:end;
+            align-items:flex-end;
+            align-items:center; */
+            /* align-items:baseline; */
+
+            /* align-content: start; */
+            /* align-content: end;
+            align-content: center;
+            align-content: space-between;
+            align-content: space-around;
+            align-content: space-evenly; */
+
+            /* gap: 20px; */
+            /* row-gap: 20px; */
+            /* column-gap: 20px; */
+        }
+        .item {
+            /* width: 23%; */
+            /* height: 100px; */
+            border: 1px solid rgb(255, 60, 0);
+        }
+
+        /* .item-1{
+            order: 3;
+        }
+        .item-2{
+            order: 2;
+        }
+        .item-7{
+            order: 4;
+        }
+        .item-8{
+            order: -1;
+        } */
+
+        /* .item-1{
+            flex-grow:1;
+            flex-shrink:1;
+            flex-basis:70%;
+            background-image: url('https://placehold.co/600x400/00FFFF/png');
+        }
+        .item-2{
+            flex-grow:1;
+            flex-shrink:1;
+            flex-basis:30%;
+            background-image: url('https://placehold.co/600x400/FF00FF/png');
+        }
+        .item-3:hover{
+            flex-grow:1;
+            flex-shrink:1;
+            background-image: url('https://placehold.co/600x400/FFFF00/png');
+        }
+        .item-4:hover{
+            flex-grow:1;
+            flex-shrink:1;
+            background-image: url('https://placehold.co/600x400/F0FF0F/png');
+        }
+        .item-5:hover{
+            flex-grow:1;
+            flex-shrink:1;
+            background-image: url('https://placehold.co/600x400/0FF0FF/png');
+        }
+        .item-6:hover{
+            flex-grow:1;
+            flex-shrink:1;
+            background-image: url('https://placehold.co/600x400/FF0FF0/png');
+        }
+        .item-7:hover{
+            flex-grow:1;
+            flex-shrink:2;
+            background-image: url('https://placehold.co/600x400/9FFF9F/png');
+        }
+        .item-8:hover{
+            flex-grow:1;
+            flex-shrink:1;
+            flex-basis: 200px;
+            background-image: url('https://placehold.co/600x400/F9F977/png');
+        } */
+
+        .item-1{
+            margin-right: auto;
+            margin-left: auto;
+            margin: auto;
+            /* align-self: center; */
+            /* align-self: flex-start; */
+            /* align-self: end; */
+            /* align-self: center; */
+            /* align-self: baseline; */
+            /* align-self: stretch; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+        <div class="item item-7">item-7</div>
+        <div class="item item-8">item-8</div>
+    </div>
+</body>
+</html>
