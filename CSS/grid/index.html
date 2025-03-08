@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 400px;
+            margin: auto;
+            width: 80%;
+            border: 1px solid black;
+
+            display: grid;
+            grid-template-columns: 300px 200px 100px 50px;
+            grid-template-columns: 200px auto;
+            grid-template-columns: 1fr, 1fr 2fr 1fr;
+            grid-template-columns: repeat(3, 1fr), 2fr;
+            grid-template-columns: 200px 200px 200px;
+
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly;
+            justify-content: space-between; */
+
+            /* grid-template-rows: 100px 150px auto;
+            grid-template-rows: 200px auto;
+            grid-template-rows: 1fr, 1fr 2fr 1fr;
+            grid-template-rows: repeat(3, 1fr), 2fr; */
+            grid-auto-rows: auto;
+            grid-auto-columns: auto;
+            /* grid-template-rows:repeat(4, 50px); */
+
+            /* align-content: start;
+            align-content: end;
+            align-content: center;
+            align-content: space-around;
+            align-content: space-evenly;
+            align-content: space-between; */
+
+            /* justify-items: start;
+            justify-items: end;
+            justify-items: center;
+            justify-items: stretch; */
+
+            /* align-items: start;
+            align-items: end;
+            align-items: center;
+            align-items: stretch */
+
+            /* gap: 10px; */
+            /* row-gap: 10px; */
+            /* column-gap: 10px; */
+
+            grid-template-areas: "hdr hdr hdr"
+                                 "side main main"
+                                 "ftr ftr ftr"
+        }
+        .item{
+            border: 1px solid red;
+            padding: 5px;
+            
+        }
+        .item-1{
+
+            grid-area: hdr;
+
+            /* justify-self: center;
+            justify-self: start;
+            justify-self: end;
+            justify-self: stretch; */
+
+            /* align-self: start;
+            align-self: center;
+            align-self: end;
+            align-self: stretch; */
+
+            /* grid-column-start: 1;
+            grid-column-end: 2; */
+            
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* grid-column: 1 / 3;
+            grid-row: 1 / 3; */
+
+            /* grid-area: <grid-row-start> / <grid-column-start> / <grid-row-end> / <grid-column-end>; */
+
+            /* grid-area: 1 / 1 / 3 / 3 ; */
+                /*  place-self: center end; /* Centers vertically, aligns right */
+
+            /* place-self: end end; */
+
+        }
+        .item-2{
+            grid-area: side;
+        }
+        .item-3{
+            grid-area: main;
+        }
+        .item-4{
+            grid-area: ftr;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <!-- <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+        <div class="item item-7">item-7</div>
+        <div class="item item-8">item-8</div>
+        <div class="item item-9">item-9</div>
+        <div class="item item-10">item-10</div>
+        <div class="item item-10">item-11</div>
+        <div class="item item-10">item-12</div> -->
+    </div>
+</body>
+</html>
