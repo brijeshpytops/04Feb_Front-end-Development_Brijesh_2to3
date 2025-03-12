@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 32px;
+        }
+        .container {
+            width: 100%;
+            /* border: 1px solid black; */
+            height: 200px;
+
+            display: flex;
+        }
+        .box {
+            width: 50%;
+            border: 1px solid violet;
+        }
+
+        @media (max-width: 576px){
+            body {
+                font-size: 16px;
+            }
+            .container{
+                flex-direction: column;
+            }
+            .box {
+                width: 100%;
+                border: 1px solid violet;
+            }
+            .box-2{
+                display: none;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a harum ex non, suscipit assumenda, quo quisquam, consectetur nobis sunt quia amet ea laborum necessitatibus provident earum! Ex voluptatibus voluptate dolorum! Temporibus quibusdam nemo tempora cum enim, eos aliquid vitae optio, a mollitia maiores libero fugiat corporis quos natus iste.</p>
+        </div>
+        <div class="box box-2">
+            <img src="https://img.freepik.com/free-vector/decorative-mandala-design-with-pastel-colours_1048-5936.jpg?t=st=1741770019~exp=1741773619~hmac=a583ea1830c71f1c635e84be379a70085a2095ae8e1bc9b858a63ad02c2c6ef2&w=740" height="150px">
+        </div>
+    </div>
+</body>
+</html>
