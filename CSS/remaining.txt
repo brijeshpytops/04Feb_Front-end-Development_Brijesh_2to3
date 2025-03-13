@@ -1,0 +1,7 @@
+Transform , Animation , Font Awesome Icons
+Font Family Through Google Font , import fontface rule
+clip
+page-break
+wireframe layout for your template using div
+Validate a Website, Hosting a website with free domain name, Column , Clippath , Gradient Color ,
+Filter, Border Image
