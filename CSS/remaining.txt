@@ -1,4 +1,4 @@
-Transform , Animation , Font Awesome Icons
+
 Font Family Through Google Font , import fontface rule
 clip
 page-break

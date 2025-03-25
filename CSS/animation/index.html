@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    
+
+    <title>Document</title>
+    <style>
+
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+        *{
+            font-size: 64px;
+        }
+        li {
+            list-style: none;
+        }
+
+        li:nth-child(1):hover{
+            animation: facebook 2s;
+        }
+
+        li:nth-child(2):hover{
+            animation: instagram 1s infinite;
+        }
+
+        li:nth-child(3):hover{
+            animation: github 5s infinite;
+        }
+
+        @keyframes facebook {
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+
+        @keyframes instagram {
+            0%{
+                transform: rotate(0deg)
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes github {
+            from{
+                transform: rotateY(0deg);
+            }
+            to{
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><i class="fa-brands fa-square-facebook"></i></li>
+        <li><i class="fa-brands fa-square-instagram"></i></li>
+        <li><i class="fa-brands fa-square-github"></i></li>
+    </ul>
+</body>
+</html>
