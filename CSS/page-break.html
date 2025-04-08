@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Break Example</title>
+    <style>
+        .page-break-before {
+            page-break-before: always;
+        }
+
+        .page-break-after {
+            page-break-after: always;
+        }
+
+        .no-page-break {
+            page-break-inside: avoid;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Title of the Document</h1>
+    
+    <p>This is some text before the break.</p>
+
+    <div class="page-break-before">
+        <h2>New Section (Starts on a New Page)</h2>
+        <p>This content appears on a new page when printed.</p>
+    </div>
+
+    <p class="page-break-after">This paragraph will be followed by a page break.</p>
+
+    <div class="no-page-break">
+        <p>This section will not be split across pages.</p>
+    </div>
+
+</body>
+</html>

@@ -1,7 +1,4 @@
-
-Font Family Through Google Font , import fontface rule
-clip
-page-break
+clip. cursor, content
 wireframe layout for your template using div
-Validate a Website, Hosting a website with free domain name, Column , Clippath , Gradient Color ,
+Validate a Website, Hosting a website with free domain name , Clippath ,
 Filter, Border Image

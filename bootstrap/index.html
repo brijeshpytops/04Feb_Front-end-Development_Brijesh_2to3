@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row>div {
+            border: 1px solid violet;
+        }
+    </style>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="container">
+        <h1>Grid layout responsvie system</h1>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">col-1</div>
+            <div class="col-lg-3 col-md-6 col-sm-12">col-2</div>
+            <div class="col-lg-3 col-md-6 col-sm-12">col-3</div>
+            <div class="col-lg-3 col-md-6 col-sm-12">col-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">col-1</div>
+            <div class="col-lg-6 col-md-6 col-sm-12">col-2</div>
+            <div class="col-lg-3 col-md-6 col-sm-12">col-3</div>
+        </div>
+    </div> -->
+    <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+
+      <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+    <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRnbEIa355DwUQi3O_AM8oHRJGOPMulqS0lEpc-IrE_2VYNP1f1-tkKL0fteBrSkcMzNTr3ZVCaxkIharcEkM-tOK5RDCADOATOvdQNTGSLZP18lNJHuSAg0U4" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-dark">Go somewhere</a>
+
+          <a href="" class="btn btn-outline-success">Buy now</a>
+        </div>
+      </div>
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+    </script>
+</body>
+
+</html>
